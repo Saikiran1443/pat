@@ -1,0 +1,14 @@
+class Solution:
+    def missingNumber(self, nums):
+        n = len(nums)
+        sum1 = n * (n + 1) // 2
+        sum2 = sum(nums)
+        return sum1 -sum2
+
+# Instantiate the Solution class
+sol = Solution()
+
+# Example usage
+input_nums = [3, 0, 1]
+result = sol.missingNumber(input_nums)
+print(result)
